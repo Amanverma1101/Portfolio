@@ -1,0 +1,145 @@
+
+*{
+   padding: 0px;
+   margin:0px;
+   box-sizing: border-box; 
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    position: relative;
+    width:100%;
+    left: 0;
+    top:0;
+}
+#navbar .logo{
+    font-family: lobster;
+}
+.logo h1{
+    display: block;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0.4rem;
+}
+
+body{
+    background-image: linear-gradient(45deg,rgb(238, 161, 130),rgb(166, 207, 245),rgb(226, 109, 109));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#title{
+   
+    width: 60vw;
+    margin: auto;
+    position: relative;
+}
+.profile{
+    box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.4),-2px -1px 8px 1px rgba(0,0,0,0.4);
+    position: relative;
+    margin-top: 2rem;
+}
+.profile img{
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4),-1px -1px 5px 1px rgba(0, 0, 0, 0.4);
+    position: relative;
+    display: block;
+    margin: auto;
+    /* width: 25vh; */
+    height: 50vh;
+    border-radius: 20px;
+}
+.profile h1{
+    position: relative;
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Playball',cursive;
+    text-shadow: 2px 2px 2px rgb(141, 102, 204);
+    padding-bottom: 0.2em;
+}
+#title::before{
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: auto;
+ background-color: rgba(49, 52, 224, 0.1);
+ border: 1px solid rgb(224, 224, 245);
+ border-radius: 0px;
+ z-index: -1;
+} 
+
+.about{
+margin: 1em;
+padding: 0.5rem;
+}      
+.about .btn{
+width: 20vw;
+display: block;
+margin: auto;
+}
+.about .btn a{
+text-decoration: none;
+color: #050e5e;
+}
+
+
+::before,
+::after{
+box-sizing: border-box;
+}
+.btn{   
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4),-1px -1px 5px 1px rgba(0, 0, 0, 0.4);
+background-color: rgba(240, 227, 227, 0.25);
+border: 0px solid rgba(27, 37, 175, 0.4);
+padding: 0.5em 0em;
+display: inline-block;
+border-radius: 20px;
+text-shadow: 2px 1px 3px rgba(36, 21, 61, 0.438);
+font-size: 1rem;
+cursor: pointer;
+user-select: none;
+position: relative;
+overflow: hidden;
+vertical-align: middle;
+transition: color 0.5s ease;
+}
+.btn::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+height: 100%;
+width: 0%;
+background-color: #0044ff9d;
+z-index: -1;
+transition: width 0.4s ease-in;
+}
+.about .btn a:hover{
+color:rgb(255, 255, 255);
+}
+
+.btn:hover::before{
+width: 100%;
+}
+
+
+footer{
+font-size: 1rem;
+background-color: black;
+color: white;
+padding: 1em;
+}
+.center{
+text-align: center;
+}
