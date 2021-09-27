@@ -53,7 +53,7 @@ body{
     position: relative;
     display: block;
     margin: auto;
-    /* width: 25vh; */
+    width: 25vh;
     height: 50vh;
     border-radius: 20px;
 }
