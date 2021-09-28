@@ -65,7 +65,7 @@ body{
     text-align: center;
     font-family: 'Playball',cursive;
     text-shadow: 2px 2px 2px rgb(141, 102, 204);
-    padding-bottom: 0.2em;
+    padding: 0.4em 0em;
 }
 #title::before{
  content: "";
